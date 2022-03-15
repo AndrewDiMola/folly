@@ -148,7 +148,7 @@ A really, *really* small spinlock for fine-grained locking of lots of teeny-tiny
 
 #### `MPMCQueue.h`
 
-MPMCQueue<typename> is a high-performance bounded concurrent queue that
+`MPMCQueue<typename>` is a high-performance bounded concurrent queue that
 supports multiple producers, multiple consumers, and optional blocking.
 The queue has a fixed capacity, for which all memory will be allocated
  up front.

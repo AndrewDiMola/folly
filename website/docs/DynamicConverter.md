@@ -28,12 +28,12 @@ convertTo naturally supports conversions to
 
 NOTE:
 
-convertTo<Type> will assume that Type is a container if
+`convertTo<Type>` will assume that Type is a container if
 * it has a Type::value_type, and
 * it has a Type::iterator, and
 * it has a constructor that accepts two InputIterators
 
-Additionally, convertTo<Type> will assume that Type is a map if
+Additionally, `convertTo<Type>` will assume that Type is a map if
 * it has a Type::key_type, and
 * it has a Type::mapped_type, and
 * value_type is a pair of const key_type and mapped_type
@@ -55,7 +55,7 @@ Example:
     struct Token {
       int kind_;
       fbstring lexeme_;
-      
+
       explicit Token(int kind, const fbstring& lexeme)
         : kind_(kind), lexeme_(lexeme) {}
     };

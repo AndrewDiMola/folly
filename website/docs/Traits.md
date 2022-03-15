@@ -61,7 +61,7 @@ public:
 ```
 
 We can optimize the task of moving a relocatable type T using memcpy.
-IsRelocatable<T>::value describes the ability of moving around memory
+`IsRelocatable<T>::value` describes the ability of moving around memory
 a value of type T by using memcpy.
 
 ### Usage
